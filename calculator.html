@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calc</title>
+</head>
+<body>
+	<span>Operator 1</span><input type="number" Id="op1">
+	<button onclick="add()">+</button>
+	<button onclick="sub()">-</button>
+	<button onclick="mul()">*</button>
+	<button onclick="div()">/</button>
+	<span>Operator 2</span><input type="number" Id="op2">
+	
+	<script type="text/javascript">
+	
+		function add()
+		{
+			var operator1=document.getElementById('op1').value;
+			var operator2=document.getElementById('op2').value;
+			var result= Number(operator1) + Number (operator2);
+			alert(result);
+		}
+		function sub()
+		{
+			var operator1=document.getElementById('op1').value;
+			var operator2=document.getElementById('op2').value;
+			var result= Number(operator1) - Number (operator2);
+			alert(result);
+		}
+		function div()
+		{
+			var operator1=document.getElementById('op1').value;
+			var operator2=document.getElementById('op2').value;
+			var result= Number(operator1) / Number (operator2);
+			alert(result);
+		}
+		function mul()
+		{
+			var operator1=document.getElementById('op1').value;
+			var operator2=document.getElementById('op2').value;
+			var result= Number(operator1) * Number (operator2);
+			alert(result);
+		}
+	</script>
+</body>
+</html>
